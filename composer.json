@@ -1,6 +1,6 @@
 {
-    "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 8 projects with composer",
+    "name": "adminteractive/adm-drupal",
+    "description": "Project template for Drupal 8 projects with composer (ADM)",
     "type": "project",
     "license": "GPL-2.0+",
     "authors": [
@@ -23,7 +23,12 @@
         "drupal/core": "~8.4",
         "drush/drush": "~8.0|^9.0.0-beta8",
         "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3"
+        "webmozart/path-util": "^2.3",
+        "drupal/admin_toolbar": "^1.20",
+        "drupal/linkit": "5.x-dev",
+        "drupal/pathauto": "^1.0",
+        "drupal/recreate_block_content": "^1.0",
+        "drupal/webform": "^5.0@beta"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -70,6 +75,13 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        }
+    },
+    "patches": {
+        "drupal/core": {
+            "CKEditor styles fix": "https://www.drupal.org/files/issues/fix_ckeditor_styles_dropdown-2911749-17.patch",
+            "Allow button element to trigger AJAX": "https://www.drupal.org/files/issues/1551534-8.4-32.patch",
+            "Duplicate AJAX wrapper around a file field": "https://www.drupal.org/files/issues/2346893-233.patch"
         }
     }
 }
