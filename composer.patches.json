@@ -1,0 +1,9 @@
+{
+    "patches": {
+        "drupal/core": {
+            "CKEditor styles fix": "https://www.drupal.org/files/issues/fix_ckeditor_styles_dropdown-2911749-17.patch",
+            "Allow button element to trigger AJAX": "https://www.drupal.org/files/issues/1551534-8.4-32.patch",
+            "Duplicate AJAX wrapper around a file field": "https://www.drupal.org/files/issues/2346893-233.patch"
+        }
+    }
+}
