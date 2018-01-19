@@ -3,6 +3,12 @@
         "drupal/core": {
             "CKEditor styles fix": "https://www.drupal.org/files/issues/fix_ckeditor_styles_dropdown-2911749-17.patch",
             "Allow button element to trigger AJAX": "https://www.drupal.org/files/issues/1551534-8.4-32.patch"
+        },
+        "drupal/paragraphs": {
+            "Paragraphs asymmetric support": "https://www.drupal.org/files/issues/meta_support-2461695-224.patch"
+        },
+        "drupal/recaptcha": {
+            "Integrate Invisible reCaptcha": "https://www.drupal.org/files/issues/recaptcha-invisible-option-2852269-56.patch"
         }
     }
 }
