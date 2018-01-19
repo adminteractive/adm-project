@@ -58,6 +58,14 @@ class ScriptHandler {
       umask($oldmask);
       $event->getIO()->write("Create a sites/default/files directory with chmod 0777");
     }
+
+    // Create config directory.
+    if (!$fs->exists($drupalFinder->getComposerRoot() . '/config/sync')) {
+      $oldmask = umask(0);
+      $fs->mkdir($drupalFinder->getComposerRoot() . '/config/sync', 0775);
+      umask($oldmask);
+      $event->getIO()->write("Create a ../config/sync with chmod 0755");
+    }
   }
 
   /**
