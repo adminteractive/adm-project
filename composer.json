@@ -34,6 +34,7 @@
         "drupal/recaptcha": "2.x-dev",
         "drupal/recreate_block_content": "^1.0",
         "drupal/search_api": "1.6",
+        "drupal/smart_trim": "1.1",
         "drupal/webform": "^5.0@beta"
     },
     "require-dev": {
