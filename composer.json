@@ -5,10 +5,15 @@
     "license": "GPL-2.0+",
     "authors": [
         {
-            "name": "",
-            "role": ""
+            "name": "ADM Interactive",
+            "homepage": "https://www.drupal.org/project/adm",
+            "role": "Maintainer"
         }
     ],
+    "support": {
+        "issues": "http://drupal.org/project/issues/adm",
+        "source": "http://cgit.drupalcode.org/adm"
+    },
     "repositories": [
         {
             "type": "composer",
@@ -25,17 +30,7 @@
         "drush/drush": "~8.0|^9.0.0-beta8",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
-        "drupal/adm": "1.x-dev",
-        "drupal/admin_toolbar": "^1.20",
-        "drupal/imce": "^1.6",
-        "drupal/linkit": "5.x-dev",
-        "drupal/paragraphs": "^1.2",
-        "drupal/pathauto": "^1.0",
-        "drupal/recaptcha": "2.x-dev",
-        "drupal/recreate_block_content": "^1.0",
-        "drupal/search_api": "1.6",
-        "drupal/smart_trim": "1.1",
-        "drupal/webform": "^5.0@beta"
+        "adminteractive/adm": "1.x-dev"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -84,7 +79,6 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
-        },
-        "patches-file": "composer.patches.json"
+        }
     }
 }
