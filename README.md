@@ -74,3 +74,8 @@ Follow the steps below to update your core files.
 
 This is normal when the dependency is installed through git (.git directories are removed by default; dev dependencies usually come through git).
 Composer should offer an option to reinstall the package, so just agree with that.
+
+**Cannot apply patch [patch]!**
+
+The patch is already applied or the code have changed. 
+You should look into the related issue. Issue number is always in patch url (it usually includes the comment number also).
