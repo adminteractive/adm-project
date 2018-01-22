@@ -67,3 +67,10 @@ Follow the steps below to update your core files.
    of a [three-way merge tool such as kdiff3](http://www.gitshah.com/2010/12/how-to-setup-kdiff-as-diff-tool-for-git.html). This setup is not necessary if your changes are simple; 
    keeping all of your modifications at the beginning or end of the file is a 
    good strategy to keep merges easy.
+
+## Common problems
+
+**Update failed (The .git directory is missing from [path], see https://getcomposer.org/commit-deps for more information)**
+
+This is normal when the dependency is installed through git (.git directories are removed by default; dev dependencies usually come through git).
+Composer should offer an option to reinstall the package, so just agree with that.
