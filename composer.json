@@ -30,7 +30,8 @@
         "drush/drush": "~8.0|^9.0.0-beta8",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
-        "adminteractive/adm": "dev-8.x-1.x"
+        "adminteractive/adm": "dev-8.x-1.x",
+        "vardot/dropzone": "5.11"
     },
     "require-dev": {
         "behat/mink": "~1.7",
