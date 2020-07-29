@@ -27,7 +27,7 @@
         "drupal/core-recommended": "^9",
         "cweagans/composer-patches": "^1.6",
         "drush/drush": "~10.3",
-        "adminteractive/adm": "dev-9.x"
+        "adminteractive/adm": "9.x-dev"
     },
     "require-dev": {
         "drupal/core-dev": "^9"
