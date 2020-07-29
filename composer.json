@@ -114,7 +114,7 @@
         },
         "patches": {
             "drupal/paragraphs": {
-                "#2904705 Support asymmetric translation in experimental widget": "https://www.drupal.org/files/issues/2020-07-02/2904705-82.patch"
+                "#2904705 Support asymmetric translation in experimental widget": "https://www.drupal.org/files/issues/2020-06-17/experimental-widget-asymetric-translation-2904705-75.patch"
             }
         }
     }
