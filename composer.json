@@ -30,10 +30,23 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "bower-asset/jstree",
+                "version": "3.3.7",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/vakata/jstree/archive/3.3.7.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
         "adminteractive/adm": "9.x-dev",
+        "bower-asset/jstree": "^3.3",
         "bower-asset/photoswipe": "^4.1",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.6",
@@ -85,25 +98,6 @@
         },
         "enable-patching": true,
         "composer-exit-on-patch-failure": false,
-        "drupal-core-project-message": {
-            "include-keys": ["homepage", "support"],
-            "post-create-project-cmd-message": [
-                "<bg=blue;fg=white>                                                         </>",
-                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
-                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
-                "<bg=blue;fg=white>                                                         </>",
-                "",
-                "<bg=yellow;fg=black>Next steps</>:",
-
-                "  * Install the site: https://www.drupal.org/docs/8/install",
-                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
-                "  * Get support: https://www.drupal.org/support",
-                "  * Get involved with the Drupal community:",
-                "      https://www.drupal.org/getting-involved",
-                "  * Remove the plugin that prints this message:",
-                "      composer remove drupal/core-project-message"
-            ]
-        },
         "patches": {
             "drupal/paragraphs": {
                 "#2904705 Support asymmetric translation in experimental widget": "https://www.drupal.org/files/issues/2020-06-17/experimental-widget-asymetric-translation-2904705-75.patch"
