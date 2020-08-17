@@ -6,7 +6,7 @@ This distribution is based on Drupal 9.
 To create a project based on ADM Distribution:
 
 ```
-composer create-project adminteractive/adm-project some-dir --stability dev --no-interaction
+composer create-project adminteractive/adm-project:9.x-dev some-dir --stability dev --no-interaction
 ```
 
 The `composer create-project` command passes ownership of all files to the 
