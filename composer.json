@@ -42,18 +42,66 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "w8tcha/ckeditor_codemirror",
+                "version": "v1.17.11",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor.codemirror"
+                },
+                "dist": {
+                    "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.11/CKEditor-CodeMirror-Plugin.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/tableresize",
+                "version": "4.13.1",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/tableresize/releases/tableresize_4.13.1.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/fakeobjects",
+                "version": "4.13.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor.fakeobjects"
+                },
+                "dist": {
+                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.13.1.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
         "adminteractive/adm": "9.x-dev",
         "bower-asset/jstree": "^3.3",
         "bower-asset/photoswipe": "^4.1",
+        "ckeditor/fakeobjects": "^4.13",
+        "ckeditor/tableresize": "^4.13",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.6",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
-        "drush/drush": "~10.3"
+        "drush/drush": "~10.3",
+        "w8tcha/ckeditor_codemirror": "^1.17"
     },
     "require-dev": {
         "drupal/core-dev": "^9"
