@@ -149,6 +149,10 @@
         "patches": {
             "drupal/paragraphs": {
                 "#2904705 Support asymmetric translation in experimental widget": "https://www.drupal.org/files/issues/2020-06-17/experimental-widget-asymetric-translation-2904705-75.patch"
+            },
+            "drupal/paragraphs_browser": {
+                "Add Paragraph button is missing when translating content #3122304": "https://www.drupal.org/files/issues/2020-03-25/add-paragraph-button-is-missing.patch",
+                "Widget UI is different from the base widget": "https://www.drupal.org/files/issues/2020-05-05/paragraphs_browser-missing_styling-3122313-2.patch"
             }
         }
     }
